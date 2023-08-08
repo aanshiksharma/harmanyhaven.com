@@ -1,0 +1,15 @@
+@media screen and (max-width: 1123px){
+    .header {
+        flex-direction: row-reverse;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navbar,
+    .login,
+    .searchbar {
+        display: none;
+    }
+}

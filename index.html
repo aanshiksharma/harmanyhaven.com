@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mending Minds</title>
+
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <section class="header font1">
+            <button type="button" class="hamburger" id="hambugerButton" onclick="toggleSidebar()">
+                <div class="hamburger-icon"></div>
+                <div class="hamburger-icon"></div>
+                <div class="hamburger-icon"></div>
+            </button>
+
+            <div class="header-logo flex aic">
+                <img src="images/logo.png" alt="Logo">
+                <p class="font1">MENDING MINDS</p>
+            </div>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#">Consult a Doctor</a></li>
+                    <li><a href="#categories">Identify Your Problem</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="searchbar flex aic">
+                <input type="search" name="search-querry" id="searchInput" placeholder="Search...">
+                <button type="submit"><img src="images/search.png" alt="Search..."></button>
+            </div>
+
+            <div class="login">
+                <a href="login.html">Login</a>
+                <a href="login.html" class="signup" id="signup">Sign Up</a>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <aside class="hamburger-sidebar" id="sideBar">
+            <button type="button" class="hamburger" id="hambugerButton" onclick="toggleSidebar()">
+                <div class="hamburger-icon"></div>
+                <div class="hamburger-icon"></div>
+                <div class="hamburger-icon"></div>
+            </button>
+
+            <nav class="side-navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#">Consult a Doctor</a></li>
+                    <li><a href="#categories">Identify Your Problem</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="side-searchbar flex aic">
+                <input type="search" name="search-querry" id="searchInput" placeholder="Search...">
+                <button type="submit"><img src="images/search.png" alt="Search..."></button>
+            </div>
+
+            <div class="side-login">
+                <a href="login.html">Login</a>
+                <a href="login.html" class="signup" id="signup">Sign Up</a>
+            </div>
+        </aside>
+
+        <section class="intro">
+            <div class="background-image"></div>
+
+            <div class="logo">
+                <div class="logo-image">
+                    <img src="images/logo.png" alt="Logo">
+                </div>
+                <h1 class="font1">MENDING MINDS</h1>
+            </div>
+
+            <section class="intro-text text-center">
+                <p>This is an Introduction.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero quaerat vero eligendi illo
+                    consequuntur iure quidem ex, officia voluptatem earum, nemo quis repellat, minima magnam! Aliquid
+                    sunt debitis laborum autem quae incidunt delectus nisi. Ex laborum reiciendis necessitatibus
+                    perspiciatis quos.</p>
+            </section>
+        </section>
+
+        <section class="services" id="services">
+            <div class="card-container">
+                <!-- Card Number 1 -->
+                <div class="card">
+                    <img src="#" alt="Problem Related Image">
+                    <h2 class="font1">PROBLEM #1</h2>
+                    <p>Problem Description. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae quisquam
+                        modi laudantium neque aliquid aliquam saepe at facilis corrupti? Ullam perspiciatis magni aut?
+                    </p>
+                    <span class="more-arrow">&rarr;</span>
+                </div>
+
+                <!-- Card Number 2 -->
+                <div class="card">
+                    <img src="#" alt="Problem Related Image">
+                    <h2 class="font1">PROBLEM #2</h2>
+                    <p>Problem Description. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae quisquam
+                        modi laudantium neque aliquid aliquam saepe at facilis corrupti? Ullam perspiciatis magni aut?
+                    </p>
+                    <span class="more-arrow">&rarr;</span>
+                </div>
+
+                <!-- Card Number 3 -->
+                <div class="card">
+                    <img src="#" alt="Problem Related Image">
+                    <h2 class="font1">PROBLEM #3</h2>
+                    <p>Problem Description. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae quisquam
+                        modi laudantium neque aliquid aliquam saepe at facilis corrupti? Ullam perspiciatis magni aut?
+                    </p>
+                    <span class="more-arrow">&rarr;</span>
+                </div>
+
+                <!-- Card Number 4 -->
+                <div class="card card-hidden">
+                    <img src="#" alt="Problem Related Image">
+                    <h2 class="font1">PROBLEM #4</h2>
+                    <p>Problem Description. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae quisquam
+                        modi laudantium neque aliquid aliquam saepe at facilis corrupti? Ullam perspiciatis magni aut?
+                    </p>
+                    <span class="more-arrow">&rarr;</span>
+                </div>
+
+                <!-- Card Number 5 -->
+                <div class="card card-hidden">
+                    <img src="#" alt="Problem Related Image">
+                    <h2 class="font1">PROBLEM #5</h2>
+                    <p>Problem Description. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae quisquam
+                        modi laudantium neque aliquid aliquam saepe at facilis corrupti? Ullam perspiciatis magni aut?
+                    </p>
+                    <span class="more-arrow">&rarr;</span>
+                </div>
+
+                <!-- Card Number 6 -->
+                <div class="card card-hidden">
+                    <img src="#" alt="Problem Related Image">
+                    <h2 class="font1">PROBLEM #6</h2>
+                    <p>Problem Description. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae quisquam
+                        modi laudantium neque aliquid aliquam saepe at facilis corrupti? Ullam perspiciatis magni aut?
+                    </p>
+                    <span class="more-arrow">&rarr;</span>
+                </div>
+
+                <!-- Card Number 7 -->
+                <div class="card card-hidden">
+                    <img src="#" alt="Problem Related Image">
+                    <h2 class="font1">PROBLEM #7</h2>
+                    <p>Problem Description. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae quisquam
+                        modi laudantium neque aliquid aliquam saepe at facilis corrupti? Ullam perspiciatis magni aut?
+                    </p>
+                    <span class="more-arrow">&rarr;</span>
+                </div>
+
+                <!-- Card Number 8 -->
+                <div class="card card-hidden">
+                    <img src="#" alt="Problem Related Image">
+                    <h2 class="font1">PROBLEM #8</h2>
+                    <p>Problem Description. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae quisquam
+                        modi laudantium neque aliquid aliquam saepe at facilis corrupti? Ullam perspiciatis magni aut?
+                    </p>
+                    <span class="more-arrow">&rarr;</span>
+                </div>
+
+                <!-- See All Card -->
+                <div class="card see-all-card" id="seeAllCard">
+                    <h2 class="font1" id="cardText">See More &rarr;</h2>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="about" id="about"></section>
+
+        <section class="contact" id="contact"></section>
+
+    </main>
+    <footer></footer>
+</body>
+
+<script src="JavaScript/script.js"></script>
+
+</html>

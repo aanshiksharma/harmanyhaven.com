@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Nunito:wght@300&family=Work+Sans:wght@300&display=swap');
+
+
+/* Global CSS */
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --primary-color: rgb(253, 114, 63);
+    --signup-button-color: rgb(45, 118, 45);
+    --blur-background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Setting maximum width for the document */
+footer,
+main {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.header {
+    margin: auto;
+    padding: 0 10px;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+}
+
+.header a::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+}
+
+header {
+    background: var(--primary-color);
+}
+
+/* Making the Hamburger */
+.hamburger {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger-icon {
+    background-color: white;
+    height: 2px;
+    width: 20px;
+    margin: 4px;
+}
+
+/* Logo inside of the header */
+.header-logo img{
+    margin-right: 6px;
+    width: 40px;
+    /* aspect-ratio: 1 / 1; */
+    border-radius: 50%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.header-logo p{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+
+/* Navigation Bar */
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    padding: 12px 0;
+    transition: 0.3s ease-out;
+}
+
+.navbar li:hover {
+    transform: scale(1.1);
+}
+
+.navbar a {
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Searchbar */
+.searchbar{
+    background: #fff;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.searchbar input{
+    font-size: 14px;
+    padding: 2px;
+    min-width: 200px;
+    border: none;
+}
+
+.searchbar input:focus{
+    outline: none;
+}
+
+.searchbar button {
+    background: transparent;
+    border: none;
+    width: 20px;
+    aspect-ratio: 1 / 1;
+}
+
+.searchbar button img{
+    width: 100%;
+}
+
+
+/* Sign-up Button */
+.signup {
+    margin-left: 8px;
+    padding: 4px 8px;
+    font-size: 14px;
+    background: var(--signup-button-color);
+    border-radius: 4px;
+    color: white;
+}
+
+/* SideBar => Appers from the right side of the screen when the hamburger is clicked or touched. */
+.hamburger-sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    z-index: 3;
+    background: black;
+    overflow: hidden;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: all 0.3s ease-in;
+}
+
+/* Side-Navigation Bar */
+.side-navbar ul{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+
+.side-navbar li {
+    padding: 12px 0;
+    transition: 0.3s ease-out;
+}
+
+.side-navbar li:hover {
+    transform: scale(1.1);
+}
+
+.side-navbar a {
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Side-Searchbar */
+.side-searchbar {
+    width: max-content;
+    margin: 20px auto;
+    background: #fff;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.side-searchbar input {
+    font-size: 14px;
+    padding: 2px;
+    min-width: 200px;
+    border: none;
+}
+
+.side-searchbar input:focus {
+    outline: none;
+}
+
+.side-searchbar button {
+    background: transparent;
+    border: none;
+}
+
+.side-searchbar button img {
+    width: 20px;
+    aspect-ratio: 1 / 1;
+}
+
+.side-login{
+    width: max-content;
+    margin: 10px auto;
+}
+
+.side-login a{
+    color: white;
+    text-decoration: none;
+}
+
+.side-login a:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+/* Utility Classes */
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.jcc {
+    justify-content: center;
+}
+
+.aic {
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.font1 {
+    font-family: 'Josefin Sans', sans-serfi;
+}
+
+.font2 {
+    font-family: 'Nunito', sans-sarif;
+}
+
+.font3 {
+    font-family: 'Work Sans', sans-sarif;
+}
