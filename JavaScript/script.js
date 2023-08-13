@@ -1,29 +1,30 @@
+// -------- DECLARING VARIABLES -------- //
+// ------------ CONSTANTS ------------ //
+const menu = document.getElementById('dropdownMenu');
+const hiddenCard = document.querySelectorAll('.card-hidden');
+const seeAllCard = document.getElementById('seeAllCard');
+const changeCardText = document.getElementById('cardText');
 
-
-function toggleSidebar() {
-    let sidebar = document.getElementById('sideBar');
-    if (sidebar.style.transform === 'scaleX(0)') {
-        sidebar.style.transform = 'scaleX(1)';
+// ------------ LOGICS ------------ //
+// Dropdown Menu Visibility Logic
+function toggleMenu() {
+    if (menu.style.transform === 'translateY(calc(-100% - 62px))') {
+        menu.style.transform = 'translateY(0)';
     } else {
-        sidebar.style.transform = 'scaleX(0)';
+        menu.style.transform = 'translateY(calc(-100% - 62px))';
     }
 }
 
 
-
-let hiddenCard = document.getElementsByClassName('card-hidden');
-let seeAllCard = document.getElementById('seeAllCard');
-let changeCardText = document.getElementById('cardText')
-seeAllCard.addEventListener('click', () => {
-    if (hiddenCard[0].style.display === 'none') {
-        for (let index = 0; index < hiddenCard.length; index++) {
-            hiddenCard[index].style.display = 'block';
+// Home Page Cards' Visibility Logic
+function toggleCards() {
+    Array.from(hiddenCard).forEach(element => {
+        if (element.style.display === 'none') {
+            element.style.display = 'block';
             changeCardText.innerHTML = "See Less &larr;";
-        }
-    } else {
-        for (let index = 0; index < hiddenCard.length; index++) {
-            hiddenCard[index].style.display = 'none';
+        } else {
+            element.style.display = 'none';
             changeCardText.innerHTML = "See More &rarr;";
         }
-    }
-});
+    });
+}

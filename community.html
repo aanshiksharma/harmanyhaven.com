@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mending Minds</title>
+
+    <!-- Links for Google Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- Links for CSS Files -->
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <section class="header font1">
+            <div class="header-logo flex aic">
+                <img src="images/logo.jpg" alt="Logo">
+                <p class="font1">MENDING MINDS</p>
+            </div>
+
+            <nav class="navbar">
+                <ul class="flex list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="login.html" class="login" id="login">Login</a></li>
+                </ul>
+            </nav>
+
+            <div class="searchbar flex aic">
+                <input type="search" name="search-querry" id="searchInput" placeholder="Search...">
+                <button type="submit"><img src="images/search.png" alt="Search..."></button>
+            </div>
+
+            <button type="button" class="hamburger" id="hambugerButton" onclick="toggleMenu()">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </section>
+
+        <section class="dropdown-menu aic" id="dropdownMenu">
+            <nav class="navbar">
+                <ul class="flex-col list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="chat.html">Global Chat</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="login.html" class="login" id="login">Login</a></li>
+                </ul>
+            </nav>
+
+            <div class="searchbar flex aic">
+                <input type="search" name="search-querry" id="searchInput" placeholder="Search...">
+                <button type="submit"><img src="images/search.png" alt="Search..."></button>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <img src="images/chat-wallpaper.jpg">
+
+        <aside class="side flex-col">
+            <article class="description">
+                <h1 class="font1 text-center">GLOBAL CHAT</h1>
+                <p>Welcome, to our Global Chat!</p>
+                <p>Here, you can chat with strangers without revealing your true identity and post questions that eat up
+                    your mind.</p>
+                <p>Below are some key features of this feature.</p>
+                <ul>
+                    <li>List Item 1</li>
+                    <li>List Item 2</li>
+                    <li>List Item 3</li>
+                    <li>List Item 4</li>
+                </ul>
+                <p>Note: This is a 'Beta Program'. Hence, you may find some bugs.</p>
+            </article>
+
+            <hr>
+
+            <section class="post-question">
+                <h2 class="font1 text-center">Post a Question</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi repellat provident suscipit?</p>
+                <form class="user-question flex">
+                    <textarea name="question" id="userQuestion" cols="30" rows="3" placeholder="Write a Question..."></textarea>
+                    <button type="submit" id="postButton">Post</button>
+                </form>
+            </section>
+        </aside>
+
+        <section class="question-content">
+            
+        </section>
+
+        <section class="chat-section">
+            <form class="user-input flex aic">
+                <input type="text" name="message" id="userMessage" placeholder="Write a Message...">
+                <button type="submit" id="sendButton">
+                    <span class="material-symbols-outlined flex aic jcc">
+                        send
+                    </span>
+                </button>
+            </form>
+
+            <!-- Chat Section -->
+            <section class="chat" id="chatSection">
+                <div class="message other">
+                    <img src="images/profile-photo.png" alt="">
+                    <p class="text">Welcome to our Global Chat Feature!</p>
+                </div>
+
+                <div class="message other">
+                    <img src="images/profile-photo.png" alt="">
+                    <p class="text">Here, you can chat with strangers and post anonymous questions online.</p>
+                </div>
+
+                <div class="message user">
+                    <p class="text">Wow! that's great.</p>
+                </div>
+
+                <div class="message other">
+                    <img src="images/profile-photo.png" alt="">
+                    <p class="text">Also, you will get notified when your question has been replied to.</p>
+                </div>
+
+                <div class="message user">
+                    <p class="text">Thanks for making such a helpful platform!</p>
+                </div>
+
+            </section>
+        </section>
+    </main>
+</body>
+
+<script src="JavaScript/script.js"></script>
+<script src="JavaScript/chat.js"></script>
+
+</html>

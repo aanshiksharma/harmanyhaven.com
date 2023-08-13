@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mending Minds</title>
+
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <section class="header font1">
+            <button type="button" class="hamburger" id="hambugerButton" onclick="toggleSidebar()">
+                <div class="hamburger-icon"></div>
+                <div class="hamburger-icon"></div>
+                <div class="hamburger-icon"></div>
+            </button>
+
+            <div class="header-logo flex aic">
+                <img src="images/logo.png" alt="Logo">
+                <p class="font1">MENDING MINDS</p>
+            </div>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#">Consult a Doctor</a></li>
+                    <li><a href="#categories">Identify Your Problem</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="searchbar flex aic">
+                <input type="search" name="search-querry" id="searchInput" placeholder="Search...">
+                <button type="submit"><img src="images/search.png" alt="Search..."></button>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <!-- The Main Container -->
+        <section class="container-login">
+
+            <!-- The Forms' Conatainer -->
+            <div class="form-container flex" id="formContainer">
+
+                <!-- Login Form -->
+                <section class="login-form">
+                    <h1 class="font1">LOGIN</h1>
+                    <form action="#" class="form flex-col" id="loginForm">
+                        <input type="text" name="username" id="loginUsername" required placeholder="Enter Username">
+                        <label for="loginUsername">Username</label>
+
+                        <input type="password" name="password" id="loginPassword" required placeholder="Enter Password">
+                        <label for="loginPassword">Password</label>
+
+                        <input type="submit" value="Login">
+                    </form>
+                </section>
+                
+                <!-- Signup Form -->
+                <section class="signup-form">
+                    <h1 class="font1">SIGNUP</h1>
+                    <form action="#" class="form flex-col" id="signupForm">
+                        <input type="text" name="username" id="signupUsername" required placeholder="Choose a Username">
+                        <label for="signupUsername">Username</label>
+
+                        <input type="password" name="password" id="signupPassword" required
+                            placeholder="Enter Password">
+                        <label for="signupPassword">Password</label>
+
+                        <input type="password" name="confirmPassword" id="signupConfirmPassword" required
+                            placeholder="Confirm Password">
+                        <label for="signupConfirmPassword">Confirm Password</label>
+
+                        <input type="submit" value="Signup">
+                    </form>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+
+<script src="JavaScript/script.js"></script>
+
+</html>

@@ -1,0 +1,47 @@
+
+
+.login-form,
+.signup-form {
+    background: var(--primary-color);
+    border-radius: 2px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    width: 350px;
+    min-height: 400px;
+    margin: 30px auto;
+    padding: 30px 20px;
+}
+
+.login-form{
+    display: none;
+}
+
+.form input {
+    position: relative;
+    margin: 4px;
+    padding: 4px;
+    background: var(--primary-color);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white ;
+    font-family: 'Nunito', sans-serif;
+}
+
+.form input::placeholder {
+    color: transparent;
+}
+
+.form input + .form label {
+    font-family: 'Nunito', sans-serif;
+    display: block;
+    position: absolute;
+    /* top: 32px; */
+    color: white;
+    padding: 0 4px;
+    margin: 4px;
+}
+
+.form input:placeholder-shown ~ form label {
+    top: 0;
+}
