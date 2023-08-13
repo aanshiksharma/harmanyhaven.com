@@ -20,9 +20,9 @@ main>img {
     margin: 10px;
     height: calc(100% - 82px);
     width: 24%;
-    background: var(--light-blur-background-color);
+    background: var(--dark-blur-background-color);
     backdrop-filter: blur(100px);
-    color: white;
+    color: black;
     justify-content: space-between;
     overflow-y: auto;
 }
@@ -47,7 +47,7 @@ main>img {
 }
 
 .description p:last-child{
-    color: var(--color-grey);
+    color: white;
 }
 
 .description ul{
@@ -61,7 +61,6 @@ main>img {
 }
 
 .user-question {
-    align-items: flex-end;
     margin-top: 10px;
 }
 
@@ -74,6 +73,7 @@ main>img {
     color: white;
 }
 
+.user-question input,
 .user-question button{
     border: 1px solid var(--color-grey);
     background: transparent;
@@ -92,16 +92,35 @@ main>img {
 /* BLOG / QUESTION SECTION */
 .question-content{
     margin: 10px calc(30% + 20px) 10px calc(24% + 20px);
-    border: 2px solid var(--light-blur-background-color);
     border-radius: 10px;
-    padding: 10px;
-    background: var(--light-blur-background-color);
+    border: 2px solid transparent;
 }
 
+.content{
+    margin: 10px;
+    border: 1px solid var(--dark-blur-background-color);
+    border-radius: 10px;
+    background: var(--dark-blur-background-color);
+    padding: 10px;
+}
 
+.content img{
+    width: 20px;
+    border-radius: 50%;
+}
 
+.question {
+    padding: 10px;
+}
 
+.question h4{
+    font-size: 18px;
+}
 
+.question p{
+    margin: 4px 0;
+    color: white;
+}
 
 
 
@@ -116,7 +135,7 @@ main>img {
     overflow: hidden;
     border-radius: 10px;
     margin: 10px;
-    background: var(--light-blur-background-color);
+    background: var(--dark-blur-background-color);
     backdrop-filter: blur(100px);
     font-family: 'Roboto', sans-serif;
     font-weight: 400;

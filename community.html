@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mending Minds</title>
+    <title>Community - Harmony Haven</title>
 
     <!-- Links for Google Icons -->
     <link rel="stylesheet"
@@ -23,7 +23,7 @@
         <section class="header font1">
             <div class="header-logo flex aic">
                 <img src="images/logo.jpg" alt="Logo">
-                <p class="font1">MENDING MINDS</p>
+                <p class="font1">HARMONY HAVEN</p>
             </div>
 
             <nav class="navbar">
@@ -69,8 +69,8 @@
 
         <aside class="side flex-col">
             <article class="description">
-                <h1 class="font1 text-center">GLOBAL CHAT</h1>
-                <p>Welcome, to our Global Chat!</p>
+                <h1 class="font1 text-center">COMMUNITY</h1>
+                <p>Welcome, to our Community Page!</p>
                 <p>Here, you can chat with strangers without revealing your true identity and post questions that eat up
                     your mind.</p>
                 <p>Below are some key features of this feature.</p>
@@ -88,7 +88,8 @@
             <section class="post-question">
                 <h2 class="font1 text-center">Post a Question</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi repellat provident suscipit?</p>
-                <form class="user-question flex">
+                <form class="user-question flex-col">
+                    <input type="text" name="title" id="questionTitle" placeholder="Enter a Title for your Question">
                     <textarea name="question" id="userQuestion" cols="30" rows="3" placeholder="Write a Question..."></textarea>
                     <button type="submit" id="postButton">Post</button>
                 </form>
@@ -96,7 +97,29 @@
         </aside>
 
         <section class="question-content">
-            
+            <section class="content">
+                <div class="profile flex aic">
+                    <img src="images/profile-photo.png" alt="">
+                    <p>username</p>
+                </div>
+
+                <article class="question">
+                    <h4>Title of the Question</h4>
+                    <p>DESCRIPTION OF THE QUESTION. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores veniam ipsam delectus suscipit. Ipsa inventore voluptatem aut eaque consectetur perferendis provident quas. Est.</p>
+                </article>
+
+                <section class="comments-section">
+                    <button type="button" class="comment-button" id="commentButton">Comments</button>
+
+                    <div class="comment">
+                        <div class="profile flex aic">
+                            <img src="images/profile-photo.png" alt="">
+                            <p>username</p>
+                        </div>
+                        <p>THIS IS A COMMENT.</p>
+                    </div>
+                </section>
+            </section>
         </section>
 
         <section class="chat-section">

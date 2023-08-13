@@ -1,44 +1,37 @@
 /* FIRST SECTION BACKGROUND IMAGE */
-.background-image img{
+.background-image img {
     position: absolute;
     top: 0;
     height: 100%;
     width: 100%;
     object-fit: cover;
-    object-position: top;
+    object-position: center;
     z-index: -1;
-    filter: brightness(0.5);
+    filter: brightness(0.8);
 }
 
 /* LANDING SECTION */
 .intro {
-    height: calc(100vh - 102px);
+    height: calc(100vh - 62px);
     color: white;
 }
 
-.logo {
-    width: 150px;
-    margin: 3% auto;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-    overflow: hidden;
+.intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: max-content;
+    transform: translate(-50%, -50%);
 }
 
-.logo img{
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-    transform: scale(1.5);
-}
-
-h1{
+h1 {
     font-size: 80px;
+    filter: drop-shadow(4px 4px 10px black);
 }
 
 .intro-text p {
-    margin-top: 10px;
+    margin: 5vh 0;
     font-size: 20px;
-    
 }
 
 
@@ -47,7 +40,7 @@ h1{
 
 /* Services */
 
-.card-container{
+.card-container {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -80,7 +73,7 @@ h1{
     display: none;
 }
 
-.see-all-card{
+.see-all-card {
     display: flex;
     justify-content: center;
     align-items: center;
