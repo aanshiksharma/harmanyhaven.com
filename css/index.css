@@ -2,7 +2,7 @@
 .background-image img {
     position: absolute;
     top: 0;
-    aspect-ratio: 16 / 9;
+    height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: center;
@@ -12,16 +12,18 @@
 
 /* LANDING SECTION */
 .intro {
-    height: calc(100vh - 62px);
+    width: 100%;
+    aspect-ratio: 19 / 9;
     color: white;
+    background: url('/images/home.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
 }
 
 .intro-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     width: max-content;
-    transform: translate(-50%, -50%);
 }
 
 h1 {
@@ -45,20 +47,19 @@ h1 {
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 10px;
-    background: var(--background-blue);
 }
 
 .card {
     position: relative;
-    border: 2px solid black;
-    margin-bottom: 4px;
+    /* border: 2px solid black; */
+    margin: 4px;
     width: 280px;
     border-radius: 10px;
     aspect-ratio: 2 / 2.2;
     transition: 0.1s ease-out;
     overflow: hidden;
-background: transparent;
-z-index: 1;
+    background: var(--background-blue);
+    z-index: 0;
 }
 
 .card img {
@@ -68,28 +69,124 @@ z-index: 1;
     width: 100%;
     height: 100%;
     z-index: 0;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
-filter: brightness(0.7);
+    z-index: -1;
+    transform: scale(1.1);
+    transition: 0.4s ease-out;
 }
 
-.more-arrow {
+.card:hover img {
+    transform: scale(1.2);
+}
+
+.card:hover .card-text {
+    transform: translateY(0);
+}
+
+.card-text {
     position: absolute;
-    bottom: 10px;
-    right: 10px;
-    font-size: 25px;
-}
-
-.card:hover {
-    transform: scale(1.02);
+    bottom: 0;
+    padding: 4px;
+    background: var(--transparent-black-background-color);
+    color: #fff;
+    transform: translateY(100%);
+    transition: 0.4s ease-out;
 }
 
 .card-hidden {
     display: none;
 }
 
-.see-all-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+
+
+/* Contact */
+.contact {
+    width: max-content;
+    height: max-content;
+    margin: 20px auto;
+    border: 2px solid var(--primary-color);
+    transform: scale(0.9);
+}
+
+.contact-content {
+    position: relative;
+    width: 70vw;
+    aspect-ratio: 16 / 9;
+}
+
+.contact-content img {
+    width: 50%;
+    aspect-ratio: 8 / 9;
+    object-fit: cover;
+    object-position: right;
+}
+
+.contact-form {
+    /* position: absolute; */
+    /* top: 0; */
+    width: 50%;
+    padding: 4px 20px;
+    background: #fff;
+    ;
+}
+
+.contact-form :where(input, textarea) {
+    width: 100%;
+    outline: 0;
+    padding: 4px 6px;
+    font-size: 1rem;
+}
+
+.contact-form input {
+    padding: 10px 0;
+    border: 0;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.contact-form textarea {
+    height: max-content;
+}
+
+.contact-form div {
+    position: relative;
+    padding: 6px 2px;
+    margin: 4px;
+}
+
+.contact-form input::placeholder {
+    color: transparent;
+}
+
+.contact-form div label {
+    position: absolute;
+    width: max-content;
+    display: block;
+    top: 0;
+    font-size: 1rem;
+    cursor: text;
+    transition: all 0.2s ease-out;
+}
+
+.contact-form div input:placeholder-shown~label {
+    font-size: 1.2rem;
+    top: 16px;
+}
+
+.buttons input {
+    color: white;
+    border: 0;
+    outline: 1px solid #000;
+    border-radius: 4px;
+    padding: 4px 10px;
+    margin: 4px 10px;
+}
+
+input[type='submit'] {
+    background: var(--success-green);
+}
+
+input[type='reset'] {
+    background: var(--failure-red);
 }

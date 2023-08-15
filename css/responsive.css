@@ -7,4 +7,32 @@
     .header .searchbar{
         display: none;
     }
+
+    .dropdown-menu{display: flex;}
+}
+
+@media screen and (max-width: 1080px){
+    .contact-content{
+        width: 90vw;
+        aspect-ratio: 16 / 10;
+    }
+    .contact-content img {
+        width: 50%;
+        aspect-ratio: 8 / 10;
+    }
+    
+    .contact-form{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .contact-form{
+        width: 100%;
+    }
+
+    .contact-content img{
+        display: none;
+    }
+
 }
