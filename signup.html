@@ -63,9 +63,20 @@
     </header>
 
     <main>
-        <section class="login">
-            <h1 class="font1 text-center">LOGIN</h1>
+        <section class="signup">
+            <h1 class="font1 text-center">SIGNUP</h1>
+
             <form action="#">
+                <div>
+                    <input type="text" name="first name" id="fname" placeholder="First Name">
+                    <label for="fname">First Name</label>
+                </div>
+
+                <div>
+                    <input type="text" name="last name" id="lname" placeholder="Last Name">
+                    <label for="lname">Last Name</label>
+                </div>
+
                 <div>
                     <input type="email" name="email" id="email" placeholder="Email">
                     <label for="email">Email</label>
@@ -77,18 +88,25 @@
                     <p id="alert"></p>
                 </div>
 
+                <div>
+                    <input type="password" name="confirm password" id="confirmPassword" placeholder="Confirm Password">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <p id="alert"></p>
+                </div>
+
                 <div class="text-center">
-                    Don't have an account? <a href="signup.html">Signup.</a>
+                    Already have an account? <a href="login.html">Login.</a>
                 </div>
 
                 <div class="loginButtons">
-                    <button class="flex aic jcc" type="button"><img src="images/google.png"> Login with Google</button>
-                    <button class="flex aic jcc" type="button"><img src="images/facebook.png">Login with Facebook</button>
+                    <button class="flex aic jcc" type="button"><img src="images/google.png"> Signup with Google</button>
+                    <button class="flex aic jcc" type="button"><img src="images/facebook.png">Signup with
+                        Facebook</button>
                 </div>
 
                 <div class="buttons flex aic jcc">
                     <input type="reset" value="Cancel">
-                    <input type="submit" value="Login">
+                    <input type="submit" value="Signup">
                 </div>
             </form>
         </section>

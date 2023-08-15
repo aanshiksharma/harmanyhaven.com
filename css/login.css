@@ -1,47 +1,107 @@
+main{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    aspect-ratio: 19 / 7;
+}
 
+h1{
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin: 10px 0;
+}
 
-.login-form,
-.signup-form {
-    background: var(--primary-color);
-    border-radius: 2px;
-    text-align: center;
-    color: white;
-    font-size: 20px;
+.login,
+.signup{
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    width: 440px;
+}
+
+.login{
     width: 350px;
-    min-height: 400px;
-    margin: 30px auto;
-    padding: 30px 20px;
 }
 
-.login-form{
-    display: none;
+
+input {
+    width: 100%;
+    outline: 0;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    border: 0;
+    border-bottom: 2px solid var(--primary-color);
 }
 
-.form input {
-    position: relative;
-    margin: 4px;
-    padding: 4px;
-    background: var(--primary-color);
-    border: none;
-    outline: none;
-    border-bottom: 2px solid white ;
-    font-family: 'Nunito', sans-serif;
-}
-
-.form input::placeholder {
+input::placeholder{
     color: transparent;
 }
 
-.form input + .form label {
-    font-family: 'Nunito', sans-serif;
-    display: block;
-    position: absolute;
-    /* top: 32px; */
-    color: white;
-    padding: 0 4px;
+:is(.login, .signup) div {
+    position: relative;
+    padding: 6px 2px;
     margin: 4px;
 }
 
-.form input:placeholder-shown ~ form label {
+label {
+    position: absolute;
+    width: max-content;
+    display: block;
     top: 0;
+    font-size: 1rem;
+    font-weight: bolder;
+    cursor: text;
+    color: var(--primary-color);
+    transition: all 0.2s ease-out;
+}
+
+input:placeholder-shown~label {
+    font-size: 1.2rem;
+    top: 15px;
+}
+
+.loginButtons button {
+    width: 100%;
+    padding: 8px;
+    margin: 4px 0;
+    border-radius: 100px;
+    background: #fff;
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+    transition: 0.4s ease-out;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.loginButtons button:hover {
+    transform: scale(1.05);
+    background: var(--primary-color);
+    color: white;
+}
+
+.loginButtons button img{
+    width: 20px;
+    aspect-ratio: 1 / 1;
+    margin-right: 10px;
+}
+
+.buttons input {
+    color: var(--primary-color);
+    outline: 0;
+    border-radius: 4px;
+    padding: 4px 10px;
+    margin: 4px 10px;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+input[type='submit']:hover {
+    color: white;
+    background: var(--success-green);
+}
+
+input[type='reset']:hover {
+    color: white;
+    background: var(--failure-red);
 }

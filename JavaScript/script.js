@@ -14,7 +14,10 @@ let htmlLinks = {
     card4: '/card4.html',
     card5: '/card5.html',
     card6: '/card6.html',
-    card7: '/card7.html'
+    card7: '/card7.html',
+    card8: '/card8.html',
+    card9: '/card9.html',
+    card10: '/card10.html'
 }
 
 
@@ -57,10 +60,13 @@ Array.from(cards).forEach(element => {
             else if (i === 4) link = htmlLinks.card5;
             else if (i === 5) link = htmlLinks.card6;
             else if (i === 6) link = htmlLinks.card7;
+            else if (i === 7) link = htmlLinks.card8;
+            else if (i === 8) link = htmlLinks.card9;
+            else if (i === 9) link = htmlLinks.card10;
         }
     }
     element.addEventListener('click', () => {
-        if (index === 7) toggleCards();
+        if (index === 10) toggleCards();
         else window.location.href = link;
     }); 
 });

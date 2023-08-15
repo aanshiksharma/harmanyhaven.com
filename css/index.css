@@ -1,12 +1,16 @@
 /* FIRST SECTION BACKGROUND IMAGE */
-.background-image img {
+.background-image{
     position: absolute;
     top: 0;
-    height: 100%;
+    aspect-ratio: 19 / 9;
+    width: 100%;
+    max-width: 1440px;
+    z-index: -1;
+}
+.background-image img {
     width: 100%;
     object-fit: cover;
     object-position: center;
-    z-index: -1;
     filter: brightness(0.8);
 }
 
@@ -15,9 +19,9 @@
     width: 100%;
     aspect-ratio: 19 / 9;
     color: white;
-    background: url('/images/home.jpg') no-repeat;
-    background-position: center;
-    background-size: cover;
+    /* background: url('/images/home.jpg') no-repeat; */
+    /* background-position: center; */
+    /* background-size: cover; */
     display: grid;
     place-items: center;
 }
@@ -27,15 +31,38 @@
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 6rem;
     filter: drop-shadow(4px 4px 10px black);
 }
 
 .intro-text p {
-    margin: 5vh 0;
-    font-size: 20px;
+    margin: 6vh 0;
+    font-size: 1.5rem;
 }
 
+
+/* A little introduction in the class called about-section */
+.about-section {
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.about-section article{
+    padding: 50px 120px;
+}
+
+.about-section .left{
+    width: 60%;
+    aspect-ratio: 16 / 9;
+    color: var(--primary-color);
+}
+
+.about-section .right{
+    background-color: rgb(172, 168, 252);
+    color: white;
+    width: 40%;
+    aspect-ratio: 16 / 9;
+}
 
 
 
@@ -92,6 +119,7 @@ h1 {
     color: #fff;
     transform: translateY(100%);
     transition: 0.4s ease-out;
+    font-size: 1.2rem;
 }
 
 .card-hidden {
@@ -111,6 +139,7 @@ h1 {
 }
 
 .contact-content {
+    max-width: 1440px;
     position: relative;
     width: 70vw;
     aspect-ratio: 16 / 9;
@@ -124,29 +153,26 @@ h1 {
 }
 
 .contact-form {
-    /* position: absolute; */
-    /* top: 0; */
+    overflow: auto;
     width: 50%;
     padding: 4px 20px;
     background: #fff;
-    ;
+}
+
+.contact-form h2{
+    color: var(--primary-color);
+    font-size: 3rem;
+    margin: 10px 0;
 }
 
 .contact-form :where(input, textarea) {
     width: 100%;
     outline: 0;
     padding: 4px 6px;
-    font-size: 1rem;
-}
-
-.contact-form input {
+    font-size: 1.2rem;
     padding: 10px 0;
     border: 0;
     border-bottom: 2px solid var(--primary-color);
-}
-
-.contact-form textarea {
-    height: max-content;
 }
 
 .contact-form div {
@@ -155,7 +181,7 @@ h1 {
     margin: 4px;
 }
 
-.contact-form input::placeholder {
+.contact-form :where(input, textarea)::placeholder {
     color: transparent;
 }
 
@@ -167,9 +193,11 @@ h1 {
     font-size: 1rem;
     cursor: text;
     transition: all 0.2s ease-out;
+    color: var(--primary-color);
+    font-weight: bolder;
 }
 
-.contact-form div input:placeholder-shown~label {
+.contact-form div :where(input, textarea):placeholder-shown~label {
     font-size: 1.2rem;
     top: 16px;
 }
@@ -181,6 +209,7 @@ h1 {
     border-radius: 4px;
     padding: 4px 10px;
     margin: 4px 10px;
+    cursor: pointer;
 }
 
 input[type='submit'] {
