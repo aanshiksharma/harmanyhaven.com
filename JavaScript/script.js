@@ -53,20 +53,20 @@ Array.from(cards).forEach(element => {
     let link;
     for (let i = 0; i <= index; i++){
         if (i == index) {
-            if (i === 0) link = 'harmony-haven/card1.html';
-            else if (i === 1) link = 'harmony-haven/card2.html';
-            else if (i === 2) link = 'harmony-haven/card3.html';
-            else if (i === 3) link = 'harmony-haven/card4.html';
-            else if (i === 4) link = 'harmony-haven/card5.html';
-            else if (i === 5) link = 'harmony-haven/card6.html';
-            else if (i === 6) link = 'harmony-haven/card7.html';
-            else if (i === 7) link = 'harmony-haven/card8.html';
-            else if (i === 8) link = 'harmony-haven/card9.html';
-            else if (i === 9) link = 'harmony-haven/card10.html';
+            if (i === 0) link = htmlLinks.card1;
+            else if (i === 1) link = htmlLinks.card2;
+            else if (i === 2) link = htmlLinks.card3;
+            else if (i === 3) link = htmlLinks.card4;
+            else if (i === 4) link = htmlLinks.card5;
+            else if (i === 5) link = htmlLinks.card6;
+            else if (i === 6) link = htmlLinks.card7;
+            else if (i === 7) link = htmlLinks.card8;
+            else if (i === 8) link = htmlLinks.card9;
+            else if (i === 9) link = htmlLinks.card10;
         }
     }
     element.addEventListener('click', () => {
         if (index === 10) toggleCards();
-        else window.location.href = link;
+        else document.location.href = link;
     }); 
 });
