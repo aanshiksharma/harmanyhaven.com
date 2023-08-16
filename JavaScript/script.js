@@ -67,6 +67,6 @@ Array.from(cards).forEach(element => {
     }
     element.addEventListener('click', () => {
         if (index === 10) toggleCards();
-        else window.location.href = link;
+        else window.location.pathname = link;
     }); 
 });
