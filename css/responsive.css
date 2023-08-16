@@ -44,12 +44,18 @@
         width: fit-content;
     }
 
-    .about-section {
+    .main h1{
+        margin: 8px;
+        font-size: 2rem;
+    }
+
+    .about-section,
+    .main article p {
         padding: 10px;
         font-size: 0.8rem;
     }
 
-    .about-section :is(.left, .right){
+    :is(.about-section, .main article) :is(.left, .right){
         width: 100%;
     }
 
