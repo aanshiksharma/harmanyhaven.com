@@ -8,16 +8,16 @@ const cards = document.getElementsByClassName('card');
 
 // ------------ OBJECTS ------------ //
 let htmlLinks = {
-    card1: '/card1.html',
-    card2: '/card2.html',
-    card3: '/card3.html',
-    card4: '/card4.html',
-    card5: '/card5.html',
-    card6: '/card6.html',
-    card7: '/card7.html',
-    card8: '/card8.html',
-    card9: '/card9.html',
-    card10: '/card10.html'
+    card1: 'card1.html',
+    card2: 'card2.html',
+    card3: 'card3.html',
+    card4: 'card4.html',
+    card5: 'card5.html',
+    card6: 'card6.html',
+    card7: 'card7.html',
+    card8: 'card8.html',
+    card9: 'card9.html',
+    card10: 'card10.html'
 }
 
 
