@@ -16,9 +16,7 @@
 
 :root{
     /* Colors */
-    /* --primary-color: rgb(110, 75, 225); */
     --primary-color: rgb(126, 119, 215);
-    
 
     --color-blue: rgb(33, 33, 184);
     --color-green: green;
@@ -33,6 +31,7 @@
     
     /* Background Colors */
     --background-blue: rgb(218, 232, 245);
+    --primary-transparent-background-color: rgba(125, 119, 215, 0.3);
     --light-blur-background-color: rgba(255, 255, 255, 0.1);
     --transparent-black-background-color: rgba(0, 0, 0, 0.6);
     --dark-blur-background-color: rgba(0, 0, 0, 0.1);

@@ -82,7 +82,7 @@ h1 {
     margin: 4px;
     width: 280px;
     border-radius: 10px;
-    aspect-ratio: 2 / 2.2;
+    aspect-ratio: 10 / 11;
     transition: 0.1s ease-out;
     overflow: hidden;
     background: var(--background-blue);
