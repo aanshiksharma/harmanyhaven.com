@@ -86,7 +86,7 @@ article ~ h2{
 }
 
 .doctor-card:hover img{
-    transform: scale(1.2) rotateZ(-12deg);
+    transform: scale(1.2) rotateZ(-8deg);
     filter: brightness(0.7) blur(2px);
 }
 

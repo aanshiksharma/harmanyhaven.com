@@ -22,3 +22,15 @@ The Social Media Icon Links for Credits:
 <a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by Grow studio - Flaticon</a>  /* Instagram */
 <a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons">Facebook icons created by Freepik - Flaticon</a>  /* Facebook */
 <a href="https://www.flaticon.com/free-icons/twitter" title="twitter icons">Twitter icons created by Pixel perfect - Flaticon</a>  /* Twitter */
+
+
+1.  Teenage Depression
+2.  Postpartum Depression
+3.  Marrirage Counselling
+4.  LGBTQ Therapy
+5.  Career Counselling
+6.  Improving Self-Esteem
+7.  Tackling Loneliness
+8.  Stress Management
+9.  Anger Management
+10. Relationship Counselling

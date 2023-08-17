@@ -70,62 +70,79 @@
     <main>
         <img src="images/chat-wallpaper.jpg">
 
-        <aside class="side flex-col">
-            <article class="description">
-                <h1 class="font1 text-center">COMMUNITY</h1>
-                <p>Welcome, to our Community Page!</p>
-                <p>Here, you can chat with strangers without revealing your true identity and post questions that eat up
-                    your mind.</p>
-                <p>Below are some key features of this feature.</p>
-                <ul>
-                    <li>List Item 1</li>
-                    <li>List Item 2</li>
-                    <li>List Item 3</li>
-                    <li>List Item 4</li>
-                </ul>
-                <p>Note: This is a 'Beta Program'. Hence, you may find some bugs.</p>
-            </article>
-
-            <hr>
-
-            <section class="post-question">
-                <h2 class="font1 text-center">Post a Question</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi repellat provident suscipit?</p>
-                <form class="user-question flex-col">
-                    <input type="text" name="title" id="questionTitle" placeholder="Enter a Title for your Question">
-                    <textarea name="question" id="userQuestion" cols="30" rows="3" placeholder="Write a Question..."></textarea>
-                    <button type="submit" id="postButton">Post</button>
-                </form>
-            </section>
-        </aside>
-
-        <section class="question-content">
-            <section class="content">
-                <div class="profile flex aic">
-                    <img src="images/profile-photo.png" alt="">
-                    <p>username</p>
-                </div>
-
-                <article class="question">
-                    <h4>Title of the Question</h4>
-                    <p>DESCRIPTION OF THE QUESTION. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores veniam ipsam delectus suscipit. Ipsa inventore voluptatem aut eaque consectetur perferendis provident quas. Est.</p>
-                </article>
-
-                <section class="comments-section">
-                    <button type="button" class="comment-button" id="commentButton">Comments</button>
-
-                    <div class="comment">
+        <section class="blog-section">
+            <div class="blog-post-container">
+                <section class="post-container">
+                    <section class="post">
                         <div class="profile flex aic">
                             <img src="images/profile-photo.png" alt="">
                             <p>username</p>
                         </div>
-                        <p>THIS IS A COMMENT.</p>
-                    </div>
+
+                        <article class="question">
+                            <h3>Title of the Question</h2>
+                                <p>DESCRIPTION OF THE QUESTION. Lorem, ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Dolores veniam ipsam delectus suscipit. Ipsa inventore voluptatem aut eaque
+                                    consectetur
+                                    perferendis provident quas. Est.
+                                </p>
+                        </article>
+
+                        <div class="write-comment flex aic">
+                            <button type="button" class="comment-button" id="commentButton">Comments</button>
+                            <input type="text" name="comment" id="userComment" placeholder="Write a comment...">
+                            <button type="button">Post</button>
+                        </div>
+                    </section>
+
+
+                    <section class="comment-section" id="commentSection">
+                        <article class="comment flex">
+                            <img src="images/profile-photo.png" alt="">
+                            <div>
+                                <p>username</p>
+                                <p>THIS IS A COMMENT. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                                    suscipit atque numquam! Lorem ipsum, dolor sit amet consectetur adipisicing
+                                    elit. Expedita, natus numquam, aperiam error, dolore corporis fuga deleniti hic
+                                    laudantium ex enim!</p>
+                            </div>
+                        </article>
+
+                        <article class="comment flex">
+                            <img src="images/profile-photo.png" alt="">
+                            <div>
+                                <p>username</p>
+                                <p>THIS IS A COMMENT. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                                    suscipit atque numquam!</p>
+                            </div>
+                        </article>
+                    </section>
                 </section>
+            </div>
+
+            <section class="post-question">
+                <h2 class="font1 text-center">Post a Question</h2>
+                <form class="post-question-form flex-col">
+                    <div>
+                        <input type="text" name="title" id="quesTitle" placeholder="Title">
+                        <label for="quesTitle">Title</label>
+                    </div>
+
+                    <div>
+                        <textarea name="question" id="quesPost" rows="2" placeholder="Question"></textarea>
+                        <label for="quesPost">Question</label>
+                    </div>
+
+                    <div class="buttons">
+                        <button type="reset">Reset</button>
+                        <button type="submit">Post</button>
+                    </div>
+                </form>
             </section>
         </section>
 
-        <section class="chat-section">
+        <section class="chat-section flex-col aic">
             <form class="user-input flex aic">
                 <input type="text" name="message" id="userMessage" placeholder="Write a Message...">
                 <button type="submit" id="sendButton">

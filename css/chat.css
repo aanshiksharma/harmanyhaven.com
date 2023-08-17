@@ -1,10 +1,10 @@
 /* MAIN */
 main{
-    display: grid;
-    grid-template-columns: 24% auto 30%;
     max-width: 1440px;
-    overflow-x: hidden;
+    height: calc(100vh - 62px);
     position: relative;
+    display: flex;
+    box-sizing: border-box;
 }
 
 /* BACKGROUND IMAGE */
@@ -19,109 +19,169 @@ main>img {
     filter: brightness(0.9);
 }
 
-/* SIDE SECTION */
-.side {
-    border: 2px solid rgba(255, 255, 255, 0.1);
+
+/* BLOG / QUESTION SECTION */
+.blog-section{
     border-radius: 10px;
-    margin: 10px;
-    background: var(--dark-blur-background-color);
-    backdrop-filter: blur(100px);
-    color: black;
+    height: calc(100% - 20px);
+    width: calc(70% - 10px);
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    margin: 10px;
+}
+
+/* Blog Posts Area */
+.blog-post-container{
     overflow-y: auto;
 }
 
-.side hr{margin: 0 30px;}
-
-.description{margin: 10px;}
-
-.description h1{
-    letter-spacing: 2px;
-    font-size: 26px;
-    margin: 6px auto;
+/* Profile */
+.blog-post-container .profile{
+    border-bottom: 2px solid var(--dark-blur-background-color);
+    padding: 0 0 4px 4px;
 }
 
-.description p{
-    font-size: 15px;
-    margin: 4px 0;
-}
-
-.description p:last-child{color: white;}
-
-.description ul{list-style-position: inside;}
-
-
-/* Question Posting Area */
-.post-question {margin: 10px;}
-
-.user-question {margin-top: 10px;}
-
-.user-question textarea{
-    width: 100%;
-    background: transparent;
-    margin-right: 4px;
-    border-radius: 6px;
-    padding: 4px;
-    color: white;
-}
-
-.user-question input,
-.user-question button{
-    border: 1px solid var(--color-grey);
-    background: transparent;
-    color: white;
-    padding: 4px 10px;
-    border-radius: 5px;
-    font-family: 'Roboto', sans-serif;
-    cursor: pointer;
-}
-
-.user-question button:hover{
-    background: var(--dark-blur-background-color);
-    backdrop-filter: blur(10px);
-}
-
-
-
-
-
-/* BLOG / QUESTION SECTION */
-.question-content{
-    border-radius: 10px;
-    border: 2px solid transparent;
-}
-
-.content{
-    margin: 10px;
-    border: 1px solid var(--dark-blur-background-color);
-    border-radius: 10px;
-    background: var(--dark-blur-background-color);
-    padding: 10px;
-}
-
-.content img{
-    width: 20px;
+/* Profile Picture */
+.blog-post-container img{
+    width: 34px;
     border-radius: 50%;
 }
 
-.question {padding: 10px;}
-
-.question h4{font-size: 18px;}
-
-.question p{
-    margin: 4px 0;
-    color: white;
+/* Blog Post */
+.post-container{
+    margin: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    position: relative;
+    background: var(--dark-blur-background-color);
+    backdrop-filter: blur(100px);
+    border-radius: 10px;
+    border: 2px solid var(--dark-blur-background-color);
 }
 
+/* Question */
+.question{
+    border-bottom: 2px solid var(--dark-blur-background-color);
+    padding: 4px 0;
+    margin: 4px 0;
+}
 
+.question :where(h3, p, .buttons){
+    margin-bottom: 4px;
+}
+
+/* User's Comments */
+.write-comment{
+    justify-content: space-evenly;
+}
+
+.write-comment input{
+    padding: 4px;
+    width: 85%;
+    font-size: 0.8rem;
+    border: 0;
+    border-bottom: 2px solid var(--primary-color);
+    outline: 0;
+    background: transparent;
+}
+
+.write-comment button{
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    background: var(--dark-blur-background-color);
+    outline: 0;
+    border: 0;
+    border-radius: 6px;
+    transition: 0.2s ease-out;
+}
+
+.write-comment .comment-button{
+    background: transparent;
+    border: 0;
+}
+
+.write-comment button:hover{
+    transform: scale(1.1);
+    color:white;
+}
+
+.write-comment button:hover:last-child{
+    background: var(--primary-color);
+}
+
+/* Comment Section */
+.comment-section{
+    border: 2px solid var(--dark-blur-background-color);
+    border-radius: 10px;
+    height: fit-content;
+    overflow: hidden;
+    margin-top: 4px;
+    transform: translateY(0);
+}
+
+/* The Comments */
+.comment {
+    margin: 4px;
+    padding: 4px;
+    font-size: 0.88rem;
+    border-bottom: 2px solid var(--dark-blur-background-color);
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.comment:last-child{
+    border-bottom: 0;
+}
+
+/* Question Posting Area */
+.post-question {
+    padding: 10px;
+    border-top: 2px solid var(--dark-blur-background-color);
+}
+
+.post-question-form div{
+    position: relative;
+}
+
+.post-question-form :where(input, textarea){
+    border: 0;
+    border-bottom: 2px solid var(--dark-blur-background-color);
+    width: 100%;
+    background: transparent;
+    outline: 0;
+    padding: 12px 4px;
+    font-size: 1rem;
+}
+
+.post-question-form label{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 4px;
+    font-size: 0.9rem;
+    transition: 0.2s ease-out;
+    font-weight: bold;
+    cursor: text;
+}
+
+.post-question-form :where(input, textarea)::placeholder{
+    color: transparent;
+}
+
+.post-question-form :where(input, textarea):placeholder-shown ~ label{
+    top: 12px;
+    font-size: 1rem;
+}
 
 /* MAIN CHAT SECTION */
 .chat-section {
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    height: calc(100% - 82px);
-    overflow: hidden;
-    border-radius: 10px;
     margin: 10px;
+    width: calc(30% - 10px);
+    flex-direction: column-reverse;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
     background: var(--dark-blur-background-color);
     backdrop-filter: blur(100px);
     font-family: 'Roboto', sans-serif;
@@ -162,8 +222,6 @@ main>img {
 }
 
 .user-input {
-    position: absolute;
-    bottom: 0;
     width: calc(100% - 20px);
     margin: 10px;
     border: 1px solid grey;

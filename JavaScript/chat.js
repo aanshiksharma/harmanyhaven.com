@@ -3,7 +3,8 @@
 const inputField = document.getElementById('userMessage');
 const chatSection = document.getElementById('chatSection');
 const sendButton = document.getElementById('sendButton');
-
+const commentButton = document.getElementById('commentButton');
+const commentSection = document.getElementById('commentSection');
 
 
 // ------------ LOGICS ------------ //
@@ -31,4 +32,15 @@ sendButton.addEventListener('click', (event) => {
 
     // Clearing the Input Field
     inputField.value = '';
+});
+
+
+
+// Comments Logic
+commentButton.addEventListener('click', () => {
+    if (commentSection.style.transform === 'translateY(-100%)') {
+        commentSection.style.transform = 'translateY(-100%)';
+    } else {
+        commentSection.style.transform = 'translateY(0)';
+    }
 });
