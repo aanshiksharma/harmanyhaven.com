@@ -1,27 +1,9 @@
-/* FIRST SECTION BACKGROUND IMAGE */
-.background-image{
-    position: absolute;
-    top: 0;
-    aspect-ratio: 19 / 9;
-    width: 100%;
-    max-width: 1440px;
-    z-index: -1;
-}
-.background-image img {
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    filter: brightness(0.8);
-}
-
 /* LANDING SECTION */
 .intro {
     width: 100%;
     aspect-ratio: 19 / 9;
     color: white;
-    /* background: url('/images/home.jpg') no-repeat; */
-    /* background-position: center; */
-    /* background-size: cover; */
+    background:linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), center / cover url(../images/home.jpg) no-repeat fixed;
     display: grid;
     place-items: center;
 }
